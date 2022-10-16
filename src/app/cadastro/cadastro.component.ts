@@ -19,12 +19,13 @@ export class CadastroComponent implements OnInit {
 
   save_filme(): void {
     const dados = {
+      imagem: this.imagem,
       genero:this.cod_genero.codigo,
       titulo: this.titulo,
       data_lancamento: this.data_lancamento,
       diretor:this.diretor,
       lista_atores: this.lista_atores,
-      imagem: this.imagem
+      
     };
     //console.log("ITEMM " + JSON.stringify(this.cod_genero));
     this.filmeService.create(dados)
