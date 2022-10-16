@@ -3,7 +3,7 @@ import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http'
 import { API_PATH } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://api-catalogo-filmes-gab.herokuapp.com';
 
 @Injectable({
   providedIn: 'root'
