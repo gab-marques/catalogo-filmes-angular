@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http'
-import { API_PATH } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 
 const baseUrl = 'https://api-catalogo-filmes-gab.herokuapp.com';
@@ -43,10 +42,5 @@ create_genero(genero:any):Observable<any>{
 }
 
 
-
-
-  // obterTodos(){
-  //   return this.httpClient.get(`${API_PATH}api/filmes-genero`).toPromise();
-  // }
 }
 
