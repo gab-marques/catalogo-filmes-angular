@@ -1,0 +1,205 @@
+<style>
+    .title_contato {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    padding: 10px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(255, 255, 255);
+    
+}
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  
+  font-size: 0.8em;
+  color: rgb(0, 0, 0);
+  top: -11px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+  background: #00cfd5;
+  padding: 3px 8px;
+  left: 25px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.style-form-input {
+    float: left;
+    width: 295px;
+    margin: 0.8em 0;
+    position: relative;
+    border-radius: 4px;
+}
+.right { float:right; }
+@media only screen and (max-width: 768px){
+    
+  .style-form-input { width:100px; }
+}
+.style-form-input label {
+    color: #999;
+    padding: 1.3rem 20px 1rem 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+.style-form-input.full { 
+    width: 600px;
+    max-width: 100%;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 30px;
+    border: 0;
+    font-size: 1em;
+    background-color: #2d2d2d;
+    color: #fff;
+    border-radius: 50px;
+}
+input:focus,
+textarea:focus { outline: 0; }
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+textarea {
+    width: 100%;
+    min-height: 10em;
+}
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 0px auto 0px auto;
+}
+.btn-submit {
+    width: 160px;
+    color: #fff;
+    font-size: 1.0em;    
+
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #06bec6;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06), 0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    border:none;
+}
+.btn-submit:hover {
+    
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+    0 1px 1px 0 rgba(0,0,0,0.09);
+}
+@media (max-width: 768px) {
+    
+    .btn-submit {
+        
+      width:100%;
+      float: none;
+      text-align:center;
+    
+    }
+}
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+#appearance-select {
+ 
+    background-color: #2d2d2d;
+    /* Imagem de fundo (Seta) */
+    width: 300px;
+    /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height: 80px;
+    /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    border-radius: 50px;
+    color: #ccc;
+    padding: 15px 35px;
+    max-width: 100%;
+    margin: 0px 20px 0 20;
+}
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #E50914;
+    color: white;
+    font-weight: 600;
+  }
+    
+    </style>
+
+  <!--<app-root></app-root>-->
+  <div class="row input-container">
+    <h1 class="title_contato">Cadastro de Filme</h1>
+    
+    <form method="post" action="#">
+        <div class="style-form-input full">
+            <input type="text" name="titulo" required [(ngModel)]="titulo"/>
+            <label><i class="icon icon-user-1"></i>  Título</label> 
+        </div>
+        
+        <div class="style-form-input">
+            <input type="text" name="data_lancamento" required [(ngModel)]="data_lancamento" />
+            <label><i class="icon icon-mail-1"></i> Data de Lançamento</label> 
+        </div>
+        
+        <div class="style-form-input right">
+          <select id="appearance-select" name="cod_genero" [(ngModel)]="cod_genero">
+            <option *ngFor="let item of genero;  index as i" [ngValue]="item">{{item.nome}}</option>
+         </select>
+         
+        </div>
+        
+        <div class="style-form-input full">
+          <input type="text" name="diretor" required [(ngModel)]="diretor"/>
+          <label><i class="icon icon-info-circled"></i> diretor</label> 
+        </div>
+        <div class="style-form-input full">
+            <input type="text" name="lista_atores" required [(ngModel)]="lista_atores"/>
+            <label><i class="icon icon-info-circled"></i> Lista de Atores</label> 
+            
+            <div class="style-form-input" aling = "">
+                <input type="text" name="imagem" required [(ngModel)]="imagem"/>
+                <label><i class="icon icon-info-circled"></i> Imagem</label> 
+                <input type="hidden" name="acao" value="enviar">
+            </div>
+         
+        </div>
+        <a class="ink" [routerLink]="['/home']" fragment="">
+            <div class="style-form-input full" aling = "center"> 
+                <input type="hidden" name="acao" value="voltar">
+                <button class="btn-submit" >Voltar</button>
+                
+                <button class="btn-submit" (click)="save_filme()">Enviar</button>
+                
+                <a class="ink" [routerLink]="['/cadastro-genero']" fragment="">
+                    
+                        <input type="hidden" name="acao" value="enviar">
+                        <button class="btn-submit" >Cadastrar Gênero</button>
+                </a>
+            </div>
+        </a>
+        
+    </form>
+    
+  </div>
+  
+ 
