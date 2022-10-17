@@ -1,5 +1,5 @@
 # Catalogo de filmes 
-  front-end de uma api node.js que possui funções de read e create filmes <link>
+  catálogo de filme e tela de cadastro (filme e gênero) desenvolvido em angular
 
 ### REQUISITOS
   angular 2+
