@@ -5,8 +5,8 @@
       https://gab-marques.github.io/catalogo-filmes-angular/home
 
 ### REQUISITOS
-    angular 2 
-    +node.js 18.11.0 
+    angular 14.2.6
+    node.js 18.11.0 ou superior
   
 
 ### COMO EXECUTAR
