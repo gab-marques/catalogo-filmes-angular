@@ -12,4 +12,7 @@
   
 ### DEPLY GITHUB-PAGES
      ng deploy --base-href=/seu-repositorio/     
+     
+#### VOCÊ PODE VER O PROJETO EM:
+      https://gab-marques.github.io/catalogo-filmes-angular/home
   
