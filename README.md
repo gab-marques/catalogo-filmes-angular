@@ -9,6 +9,7 @@
 ### COMO EXECUTAR
   npm install
   npm start
-### SE REALIZAR UPDATE
+  
+### SE REALIZAR ALTERAÇÕES 
   ng deploy --base-href=/seu-repositorio/     
   
