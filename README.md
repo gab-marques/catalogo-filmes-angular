@@ -3,7 +3,7 @@
 
 ### REQUISITOS
   angular 2+
-  node.js 18.11.0 
+   node.js 18.11.0 
   
 
 ### COMO EXECUTAR
