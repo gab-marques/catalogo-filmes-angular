@@ -7,8 +7,8 @@
   
 
 ### COMO EXECUTAR
-   npm install
-   npm start
+  npm install
+  npm start
 ### SE REALIZAR UPDATE
   ng deploy --base-href=/seu-repositorio/     
   
