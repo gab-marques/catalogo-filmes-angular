@@ -10,6 +10,6 @@
     npm install
     npm start
   
-### SE REALIZAR ALTERAÇÕES 
+### DEPLY GITHUB-PAGES
      ng deploy --base-href=/seu-repositorio/     
   
