@@ -1,5 +1,8 @@
 # Catalogo de filmes 
-    catálogo de filme e tela de cadastro (filme e gênero) desenvolvido em angular
+   catálogo de filme e tela de cadastro (filme e gênero) desenvolvido em angular
+
+#### VOCÊ PODE VISUALIZAR O PROJETO:
+      https://gab-marques.github.io/catalogo-filmes-angular/home
 
 ### REQUISITOS
     angular 2 
@@ -14,6 +17,5 @@
 ### DEPLOY GITHUB-PAGES
      ng deploy --base-href=/seu-repositorio/     
      
-#### VOCÊ PODE VER O PROJETO EM:
-      https://gab-marques.github.io/catalogo-filmes-angular/home
+
   
