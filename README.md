@@ -2,8 +2,8 @@
   catálogo de filme e tela de cadastro (filme e gênero) desenvolvido em angular
 
 ### REQUISITOS
-  angular 2+
-   node.js 18.11.0 
+  angular 2 
+  +node.js 18.11.0 
   
 
 ### COMO EXECUTAR
