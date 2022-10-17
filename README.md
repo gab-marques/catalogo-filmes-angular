@@ -7,8 +7,9 @@
   
 
 ### COMO EXECUTAR
-    npm install
-    npm start
+    npm install -g @angular/cli
+    cd <'repositorio do projeto'>
+    ng serve
   
 ### DEPLOY GITHUB-PAGES
      ng deploy --base-href=/seu-repositorio/     
