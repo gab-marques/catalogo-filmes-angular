@@ -10,7 +10,7 @@
     npm install
     npm start
   
-### DEPLY GITHUB-PAGES
+### DEPLOY GITHUB-PAGES
      ng deploy --base-href=/seu-repositorio/     
      
 #### VOCÊ PODE VER O PROJETO EM:
