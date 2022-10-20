@@ -295,6 +295,14 @@
         visibility: hidden;
       }
     }
+
+    figure .img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 10px;
+    }
   </style>
   
   <!-- Toolbar -->
@@ -319,7 +327,7 @@
       <div *ngFor="let item of filme; index as i" style="width: 18rem;">
       <a class="card " target="_blank" rel="noopener" style="color:white; text-align: center;">        
         <figure>  
-          <img height = "150px" src="{{item.imagem}}" alt="Minha Figura">
+          <img height = "150px" width = "100px" src="{{item.imagem}}" alt="Minha Figura">
           <h2>{{item.titulo}}</h2>
         </figure>
       </a>
